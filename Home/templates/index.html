@@ -3,45 +3,55 @@
 {% endblock title %}
 {% block body %}
 <!-- home page code start -->
-
-<div class="row">
-    <div class="leftcolumn">
-        <div class="card">
-            <h2>Title Heading</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some Text...</p>
-        </div>
-        <div class="card">
-            <h2>Title Heading</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text...</p>
-        </div>
+<br>
+<main class="container">
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+      <div class="col-lg-6 px-0">
+        <h1 class="display-4 fst-italic">Techno Blog</h1>
+        <p class="lead my-3">Welocme to techno Blog, where inspiration meets information in every click. Immerse yourself in a world pf captivating stories, insightful articles, and expertly curated content. Explore the latest trends, discover thought-provoking ideas, and embark on a journey of knowledge and creativity. Whether you are seasoned enthusiast or a curious newcomer. Join us on this literary adventure, where words come to life and idea unfold.</p>
+        <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+      </div>
     </div>
-    <div class="rightcolumn">
-        <div class="card">
-            <h2>About Me</h2>
-            <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in this section</p>
+</main>
+
+<!-- blog card code start -->
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-body-secondary">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
         </div>
-        <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg">Image</div><br>
-            <div class="fakeimg">Image</div><br>
-            <div class="fakeimg">Image</div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
         </div>
-        <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text...</p>
-        </div>
+      </div>
     </div>
-</div>
-
-<div class="footer">
-    <h2>Footer</h2>
-</div>
-
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-body-secondary">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- blog card code end -->
 
 <!-- home page code end -->
 {% endblock body %}
