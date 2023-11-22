@@ -1,9 +1,11 @@
 from django.shortcuts import render, HttpResponse
-
+from Home.models import Post
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html")
+    allPosts = Post.objects.all()
+    context = {'allPosts': allPosts}
+    return render(request, "index.html", context)
 
 def about(request):
     return render(request, "about.html")
