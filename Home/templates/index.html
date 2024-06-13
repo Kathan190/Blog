@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <title>Blog</title>
+    </head>
+    <body>
+        <!-- Header code start -->
+        <div class="image-container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Topics</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <h1>Techno Home</h1>
+            </div>
+            <img src="{% static 'image/profile.png' %}" alt="background-image">
+        </div>
+        <!-- Header code end -->
+    </body>
+</html>
