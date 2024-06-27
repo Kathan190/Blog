@@ -35,11 +35,39 @@
                 <div class="about-right">
                     <h1 id="text">About Us</h1>
                     <p id="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
-                    <a class="btn" href="#">Explore Topics</a>
                 </div>
             </div>
         </main>
         <!-- About section code -->
+
+        <!-- Contact section code -->
+        <section class="s2">
+            <div class="main-container">
+                <a href="#"></a>
+                <h3 style="text-align:center;">Get In Touch</h3>
+
+                <form id="contact-form" method="post" action="/">
+                    {% csrf_token %}
+                    <a name="contact"></a>
+
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+                    
+                    <label>Email</label>
+                    <input class="input-field" type="email" name="email">
+
+                    <label>Message</label>
+                    <textarea class="input-field" name="message"></textarea>
+
+                    <input id="submit-btn" type="submit" value="send">
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact section code -->
 
         
     </body>
