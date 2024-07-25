@@ -18,3 +18,12 @@ class Blog2(models.Model):
 
     def __str__(self):
         return self.title
+    
+class Contact(models.Model):
+    sno = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    message = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.email
