@@ -15,3 +15,6 @@ def index(request):
     context = {'allBlog1':allBlog1, 'allBlog2':allBlog2}
     return render(request, 'index.html', context)
     #return HttpResponse('This is blog page')
+
+def about(request):
+    return render(request, 'about.html')
