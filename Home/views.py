@@ -18,3 +18,6 @@ def index(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def blogpost(request):
+    return render(request, 'blogpost.html')
