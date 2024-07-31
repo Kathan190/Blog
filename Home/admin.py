@@ -1,6 +1,6 @@
 from django.contrib import admin
-from Home.models import Blog1
 from Home.models import Blog2
+from Home.models import Blog1
 from Home.models import Contact
 # Register your models here.
 

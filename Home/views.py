@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from Home.models import Blog1
 from Home.models import Blog2
+from Home.models import Blog1 
 from Home.models import Contact
 # Create your views here.
 def index(request):
@@ -10,9 +10,9 @@ def index(request):
         message = request.POST.get('message')
         contact = Contact(name=name, email=email, message=message)
         contact.save()
-    allBlog1 = Blog1.objects.all()
     allBlog2 = Blog2.objects.all()
-    context = {'allBlog1':allBlog1, 'allBlog2':allBlog2}
+    allBlog1 = Blog1.objects.all()
+    context = {'allBlog2':allBlog2, 'allBlog1':allBlog1}
     return render(request, 'index.html', context)
     #return HttpResponse('This is blog page')
 
