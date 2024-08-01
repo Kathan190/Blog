@@ -21,5 +21,5 @@ def about(request):
     return render(request, 'about.html')
 
 def blogpost(request, id):
-    post = Blog1.objects.filter(post_id = id)[0]
+    post = Blog1.objects.filter(post_id = id)
     return render(request, 'blogpost.html', {'post':post})
