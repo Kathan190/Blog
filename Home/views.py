@@ -13,7 +13,7 @@ def index(request):
         contact.save()
     allBlog2 = Blog2.objects.all()
     simpleblog1 = SimpleBlog1.objects.all()
-    context = {'allBlog2':allBlog2, 'simpleBlog1':simpleblog1}
+    context = {'allBlog2':allBlog2, 'simpleblog1':simpleblog1}
     return render(request, 'index.html', context)
     #return HttpResponse('This is blog page')
 
