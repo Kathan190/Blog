@@ -18,7 +18,7 @@ class Blog1(models.Model):
         return self.title 
 
 class SimpleBlog1(models.Model):
-    post_id = models.AutoField(primary_key = 'True')
+    sno = models.AutoField(primary_key = 'True')
     title = models.CharField(max_length=500, default="")
     heading = models.CharField(max_length=500, default="")
     description = models.CharField(max_length=500, default="")
